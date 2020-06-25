@@ -9,7 +9,7 @@ public:
         for(int u : nums){
             curr += u;
             ans = max(ans, curr);
-            curr = max(a, 0);
+            curr = max(curr, 0);
         }
         return ans;
     }
